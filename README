@@ -1,0 +1,73 @@
+# DNA Sequence Classification with DNABERT
+
+This project implements a DNA sequence classification model using the DNABERT architecture. It processes DNA sequences, tokenizes them into k-mers, and trains a model to classify the sequences based on genotype.
+
+## Features
+
+- Data preprocessing of DNA sequences
+- Tokenization of sequences into k-mers
+- Implementation of DNABERT model for sequence classification
+- Training and evaluation pipeline
+- Data exploration and visualization
+
+## Prerequisites
+
+- Python 3.7+
+- PyTorch
+- Transformers
+- Pandas
+- Matplotlib
+- Scikit-learn
+
+## Installation
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/yourusername/dna-sequence-classification.git
+   cd dna-sequence-classification
+   ```
+
+2. Create a virtual environment and activate it:
+   ```
+   python -m venv venv
+   source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+   ```
+
+3. Install the required packages:
+   ```
+   pip install -r requirements.txt
+   ```
+
+## Usage
+
+1. Data Preprocessing:
+   ```
+   python src/data_preprocessing.py
+   ```
+   This script downloads the DNA sequences, processes them, and saves the results in a CSV file.
+
+2. Model Training:
+   ```
+   python src/model_training.py
+   ```
+   This script loads the processed data, trains the DNABERT model, and evaluates its performance.
+
+3. Data Exploration:
+   Open the Jupyter notebook in the `notebooks/` directory for data visualization and analysis.
+
+## Project Structure
+
+- `data/`: Contains the input data and processed datasets
+- `src/`: Source code for data preprocessing and model training
+- `notebooks/`: Jupyter notebooks for data exploration and analysis
+- `requirements.txt`: List of Python dependencies
+- `README.md`: Project documentation (this file)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+## Acknowledgments
+
+- DNABERT model: [zhihan1996/DNA_bert_6](https://huggingface.co/zhihan1996/DNA_bert_6)
+- Dataset: E-MTAB-5530
